@@ -27,6 +27,8 @@ Assume we did not include the customerNumber in the table. What could be a key, 
 
 #### Answer
 
+*  Given that we did not use the composite-key which is "customerNumber", the best alternative "key" to use would then be "customerName". This would result in the violations staying the same in the normal forms. 
+
 ## Exercise 3
 
 ##### Q1
