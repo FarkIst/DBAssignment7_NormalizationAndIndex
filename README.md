@@ -19,3 +19,41 @@
 The database state is in violation of the 3rd normal form, as the fields relation to the address of the customer and office are dependent on each other and can be abstracted to it's own "address" table to avoid data duplication.
 
 The same can be done for the first and last name fields on the customers and employees by making a "persons" table that has the fields they share.
+
+
+## Exercise 2
+
+Assume we did not include the customerNumber in the table. What could be a key, and do we get the same violations of the normal forms?
+
+#### Answer
+
+## Exercise 3
+
+* Write a safe update statement that change the repPhone column from oldNumber (say 12345678) to newNumber (say 87654321).
+
+#### Answer
+
+* Write an update of repEmail which do not update properly (do not update it everywhere it should)
+
+#### Answer
+
+## Exercise 4
+In this exercise we will assume we have materialized this query into a table `tblEx4Sydney`.
+
+```sql
+with my_cust as
+   (select customerNumber,
+       customerName,
+       customers.country as custCountry,
+       offices.city      as repCity
+    from employees
+       inner join customers on employees.employeeNumber = customers.salesRepEmployeeNumber
+       inner join offices on employees.officeCode = offices.officeCode)
+select *
+from my_cust
+where repCity = 'Sydney'
+```
+
+Assume we have an index on customerName, and assume a fan-out in the B+ tree of 4. 
+
+**Draw** a representation of of the B+ tree with index and leaf nodes, as well as the actual table data. The drawing must be a combination of Figure 1.1 and 1.2 from [Anatomy of an SQL index](https://use-the-index-luke.com/sql/anatomy).
