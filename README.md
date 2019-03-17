@@ -45,10 +45,10 @@ WHERE customerName = 'Scandinavian Gift Ideas'  AND customerNumber <> 0;
 Updating the repPhone changes all the numbers for the representatives located in the same city. That points to the fact that repPhone is dependent of the repCity and not to the repName.
 
 
-* *View before execution
+* View before execution
 ![picture](https://github.com/FarkIst/DBAssignment7_NormalizationAndIndex/blob/master/img/UpdateNoB4.PNG)
 
-* *View after execution
+* View after execution
 ![picture](https://github.com/FarkIst/DBAssignment7_NormalizationAndIndex/blob/master/img/UpdateNoAfter.PNG)
 
 ##### Q2
@@ -58,6 +58,9 @@ Write an update of repEmail which do not update properly (do not update it every
 
 ```sql
 
+UPDATE CustomerOverview
+SET repEmail = 'bananaspliffy@smuk.com'
+WHERE custCity = 'Auckland';
 
 ```
 
