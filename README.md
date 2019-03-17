@@ -33,9 +33,23 @@ Assume we did not include the customerNumber in the table. What could be a key, 
 
 #### Answer
 
+```sql
+
+UPDATE customeroverview
+SET repPhone = '+1 666 999 1984'
+WHERE customerName = 'Mini Gifts Distributors Ltd.' AND repName = 'Leslie Jennings';
+
+```
+
 * Write an update of repEmail which do not update properly (do not update it everywhere it should)
 
 #### Answer
+
+```sql
+
+
+```
+
 
 ## Exercise 4
 In this exercise we will assume we have materialized this query into a table `tblEx4Sydney`.
