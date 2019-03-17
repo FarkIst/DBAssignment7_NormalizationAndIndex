@@ -46,10 +46,10 @@ Updating the repPhone changes all the numbers for the representatives located in
 
 
 * *View before execution
-![picture](https://github.com/FarkIst/DBAssignment)
+![picture](https://github.com/FarkIst/DBAssignment7_NormalizationAndIndex/blob/master/img/UpdateNoB4.PNG)
 
 * *View after execution
-![picture](https://github.com/FarkIst/DBAssignment)
+![picture](https://github.com/FarkIst/DBAssignment7_NormalizationAndIndex/blob/master/img/UpdateNoAfter.PNG)
 
 ##### Q2
 Write an update of repEmail which do not update properly (do not update it everywhere it should)
