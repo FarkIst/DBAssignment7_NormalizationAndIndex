@@ -38,9 +38,19 @@ Write a safe update statement that change the repPhone column from oldNumber (sa
 
 UPDATE customeroverview
 SET repPhone = '+1 666 999 1984'
-WHERE customerName = 'Mini Gifts Distributors Ltd.' AND repName = 'Leslie Jennings';
+WHERE customerName = 'Scandinavian Gift Ideas'  AND customerNumber <> 0;
 
 ```
+
+Updating the repPhone changes all the numbers for the representatives located in the same city. That points to the fact that repPhone is dependent of the repCity and not to the repName.
+
+
+* *View before execution
+![picture](https://github.com/FarkIst/DBAssignment)
+
+* *View after execution
+![picture](https://github.com/FarkIst/DBAssignment)
+
 ##### Q2
 Write an update of repEmail which do not update properly (do not update it everywhere it should)
 
