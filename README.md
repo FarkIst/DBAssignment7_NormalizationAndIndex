@@ -1,19 +1,19 @@
 # DBAssignment7_NormalizationAndIndex
 ## Exercise 1
 
-#### Mention which violation there are to:
+### Mention which violation there are to:
 
-* First normal form (if any)
+#### First normal form (if any)
 ##### Answer
 
 * There are no first normal form violations because we have identified primary keys for each table used and no multivalued attributes.
 
-* Second normal form (if any)
+#### Second normal form (if any)
 ##### Answer
 
 * There are no second normal form violations because there are no partial dependencies (mainly because each table has only one primary key)
 
-* Third normal form (if any)
+#### Third normal form (if any)
 ##### Answer
 
 * The database state is in violation of the 3rd normal form through transitional dependencies, as the fields relation to the address of the customer and office are dependent on each other and can be abstracted to it's own "address" table to avoid data duplication.
