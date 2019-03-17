@@ -29,7 +29,8 @@ Assume we did not include the customerNumber in the table. What could be a key, 
 
 ## Exercise 3
 
-* Write a safe update statement that change the repPhone column from oldNumber (say 12345678) to newNumber (say 87654321).
+##### Q1
+Write a safe update statement that change the repPhone column from oldNumber (say 12345678) to newNumber (say 87654321).
 
 #### Answer
 
@@ -40,8 +41,8 @@ SET repPhone = '+1 666 999 1984'
 WHERE customerName = 'Mini Gifts Distributors Ltd.' AND repName = 'Leslie Jennings';
 
 ```
-
-* Write an update of repEmail which do not update properly (do not update it everywhere it should)
+##### Q2
+Write an update of repEmail which do not update properly (do not update it everywhere it should)
 
 #### Answer
 
