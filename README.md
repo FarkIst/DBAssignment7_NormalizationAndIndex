@@ -4,13 +4,15 @@
 #### Mention which violation there are to:
 
 * First normal form (if any)
+##### Answer
+
 // VLAD answer here
 
 * Second normal form (if any)
-
+##### Answer
 // VLAD answer here
 * Third normal form (if any)
-
+##### Answer
 // VLAD answer here
 
 
